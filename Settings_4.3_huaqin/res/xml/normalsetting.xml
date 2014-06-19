@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="无线和网络">
+        <PreferenceScreen android:icon="@drawable/ic_settings_wireless" android:title="@string/wifi_settings_title" android:key="wifi_settings">
+            <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.wifi.WifiSettings" />
+        </PreferenceScreen>
+        <PreferenceScreen android:icon="@drawable/stat_notify_mobile_data" android:id="@id/mobiledata_settings" android:title="@string/data_usage_enable_mobile">
+            <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.MobileNetworkSettings" />
+        </PreferenceScreen>
+        <PreferenceScreen android:icon="@drawable/ic_settings_bluetooth2" android:id="@id/bluetooth_settings" android:title="@string/bluetooth_settings_title">
+            <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.bluetooth.BluetoothSettings" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="设备">
+        <PreferenceScreen android:icon="@drawable/ic_settings_sim_display" android:id="@id/multi_sim_settings" android:title="@string/multi_sim_settings_title">
+            <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.multisimsettings.MultiSimSettings" />
+        </PreferenceScreen>
+        <PreferenceScreen android:icon="@drawable/ic_settings_call_display" android:id="@id/call_display_settings" android:title="@string/call_settings">
+            <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.CallFeaturesSetting" />
+        </PreferenceScreen>
+        <PreferenceScreen android:icon="@drawable/ic_settings_sound" android:id="@id/sound_settings" android:title="@string/sound_settings">
+            <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.SoundSettings" />
+        </PreferenceScreen>
+        <PreferenceScreen android:icon="@drawable/ic_settings_sound_effect" android:id="@id/audio_profile_settings" android:title="@string/audio_profile_settings_title">
+            <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.Settings$AudioProfileSettingsActivity" />
+        </PreferenceScreen>
+        <PreferenceScreen android:icon="@drawable/ic_settings_display" android:id="@id/display_settings" android:title="@string/display_settings">
+            <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.DisplaySettings" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

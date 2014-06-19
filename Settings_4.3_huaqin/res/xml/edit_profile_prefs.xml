@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:persistent="false" android:orderingFromXml="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/sound_category_sound_title" android:key="general" />
+    <CheckBoxPreference android:title="@string/vibrate_title" android:key="phone_vibrate" android:summary="@string/Phone_vibrate_summary" />
+    <com.yeptelecom.audioprofile.RingerVolumePreference android:persistent="false" android:title="@string/all_volume_title" android:key="ring_volume" android:dialogTitle="@string/all_volume_title" />
+    <PreferenceCategory android:title="@string/sound_category_calls_title" android:key="ringtone">
+        <com.yeptelecom.audioprofile.DefaultRingtonePreference android:persistent="false" android:title="@string/voice_call_title" android:key="phone_ringtone" android:summary="@string/voice_call_summary" />
+        <com.yeptelecom.audioprofile.DefaultRingtonePreference android:persistent="false" android:title="@string/voice_call_title_2" android:key="phone_ringtone_2" android:summary="@string/voice_call_summary_2" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/sound_category_notification_title" android:key="notifications">
+        <com.yeptelecom.audioprofile.DefaultRingtonePreference android:persistent="false" android:title="@string/notification_sound_title" android:key="notifications_ringtone" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/sound_category_feedback_title" android:key="feedback" />
+    <CheckBoxPreference android:title="@string/dtmf_tone_enable_title" android:key="audible_touch_tones" />
+    <CheckBoxPreference android:title="@string/sound_effects_enable_title" android:key="audible_selection" />
+    <CheckBoxPreference android:title="@string/lock_sounds_enable_title" android:key="screen_lock_sounds" />
+    <CheckBoxPreference android:title="@string/haptic_feedback_enable_title" android:key="haptic_feedback" />
+    <ListPreference android:entries="@array/emergency_tone_entries" android:title="@string/emergency_tone_title" android:key="emergency_tone" android:entryValues="@array/emergency_tone_values" />
+</PreferenceScreen>

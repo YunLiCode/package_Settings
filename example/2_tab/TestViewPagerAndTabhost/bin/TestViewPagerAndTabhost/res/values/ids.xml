@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="yun_settings">false</item>
+    <item type="id" name="linearLayout1">false</item>
+    <item type="id" name="text1">false</item>
+    <item type="id" name="text2">false</item>
+    <item type="id" name="text3">false</item>
+    <item type="id" name="cursor">false</item>
+    <item type="id" name="viewpage">false</item>
+    <item type="id" name="menu_settings">false</item>
+</resources>

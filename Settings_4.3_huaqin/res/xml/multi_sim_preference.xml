@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <PreferenceCategory android:persistent="false" android:title="@string/dual_sim_configure" android:key="multi_sim_settings">
+        <PreferenceScreen android:persistent="false" android:title="@string/sel_sub_title" android:key="config_sub" android:summary="@string/sel_sub_summary">
+            <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.SetSubscription" />
+        </PreferenceScreen>
+        <com.android.settings.multisimsettings.MultiSimEnablerPreference android:title="@string/sim_enabler" android:key="sim_one_enabler_key" android:widgetLayout="@layout/custom_checkbox">
+            <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.multisimsettings.MultiSimSettingTab" />
+        </com.android.settings.multisimsettings.MultiSimEnablerPreference>
+        <com.android.settings.multisimsettings.MultiSimEnablerPreference android:title="@string/sim_enabler" android:key="sim_two_enabler_key" android:widgetLayout="@layout/custom_checkbox">
+            <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.multisimsettings.MultiSimSettingTab" />
+        </com.android.settings.multisimsettings.MultiSimEnablerPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:persistent="false" android:title="@string/preferred_subs_settings_title" android:key="preferred_subscription_settings">
+        <com.android.settings.multisimsettings.PreferredSubscriptionListPreference android:persistent="false" android:title="@string/voice_title" android:key="voice_list" />
+        <com.android.settings.multisimsettings.PreferredSubscriptionListPreference android:persistent="false" android:title="@string/data_title" android:key="data_list" />
+        <com.android.settings.multisimsettings.PreferredSubscriptionListPreference android:persistent="false" android:title="@string/sms_title" android:key="sms_list" />
+    </PreferenceCategory>
+    <PreferenceCategory android:persistent="false" android:title="@string/title_data_settings" android:key="preferred_data_settings">
+        <com.android.settings.multisimsettings.DataEnablerPreference android:persistent="false" android:title="@string/data_enabled" android:key="button_data_enabled_key" android:summary="@string/data_enable_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>

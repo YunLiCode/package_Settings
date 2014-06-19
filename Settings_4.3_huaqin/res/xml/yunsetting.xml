@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="音效">
+        <PreferenceScreen android:title="DSP音效管理" android:key="yun" android:summary="android最常用的音效管理">
+            <intent android:targetPackage="com.bel.android.dspmanager" android:action="android.intent.action.MAIN" android:targetClass="com.bel.android.dspmanager.activity.DSPManager" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="V4音效管理" android:key="yun" android:summary="个人认为最适合高通的音效管理">
+            <intent android:targetPackage="com.vipercn.viper4android" android:action="android.intent.action.MAIN" android:targetClass="com.vipercn.viper4android.activity.ViPER4Android" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="功能添加">
+        <PreferenceScreen android:title="字体自定义" android:key="fonts" android:summary="可以方便快捷的定义自己的字体">
+            <intent android:targetPackage="com.yun.zSettings" android:action="android.intent.action.MAIN" android:targetClass="com.yun.zSettings.zSettings" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="RE管理器" android:key="re" android:summary="最强的文件管理器">
+            <intent android:targetPackage="com.speedsoftware.rootexplorer" android:action="android.intent.action.MAIN" android:targetClass="com.speedsoftware.rootexplorer.RootExplorer" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="自动飞行" android:key="yun" android:summary="健康睡眠、省电">
+            <intent android:targetPackage="com.google.mail.theeastlake.autoairplanemode" android:action="android.intent.action.MAIN" android:targetClass="com.google.mail.theeastlake.autoairplanemode.AutoAirplaneMode" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="免打扰模式" android:key="yun" android:summary="商务必备">
+            <intent android:targetPackage="net.gnobal.dindy" android:action="android.intent.action.MAIN" android:targetClass="net.gnobal.dindy.Dindy" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="功能整合">
+        <PreferenceScreen android:title="下载管理器" android:key="backup" android:summary="查看自带浏览器下载的文件">
+            <intent android:targetPackage="com.android.providers.downloads.ui" android:action="android.intent.action.MAIN" android:targetClass="com.android.providers.downloads.ui.DownloadList" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="终端模拟器" android:key="shortcut" android:summary="类似linux的终端、windows的cmd">
+            <intent android:targetPackage="jackpal.androidterm" android:action="android.intent.action.MAIN" android:targetClass="jackpal.androidterm.Term" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>
